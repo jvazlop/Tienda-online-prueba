@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos - Proyecto Final</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Tienda</h1>
+        <nav>
+            <div class="carrito">
+                🛒 Carrito: <span id="contador-carrito">0</span> - 
+                Total: <span id="total-carrito">0€</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+            <h2>Productos</h2>
+            <input type="search" id="buscar" placeholder="Buscar producto...">
+            <div id="lista-productos"></div>
+        </section>
+
+        <aside>
+            <h2>Categorías</h2>
+            <ul id="categorias">
+                <li><button data-categoria="todos" class="activo">Todos</button></li>
+                <li><button data-categoria="electronica">Electrónica</button></li>
+                <li><button data-categoria="ropa">Ropa</button></li>
+                <li><button data-categoria="libros">Libros</button></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Tienda - Proyecto Final HTML + CSS + JS</p>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+</body>
+</html>
